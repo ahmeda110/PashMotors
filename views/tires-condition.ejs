@@ -1,0 +1,306 @@
+<head>
+    <link rel="stylesheet" href="/styles/checkbox.css">
+</head>
+
+<div id="multi-step-form-container">
+    <!-- Progress Bar -->
+    <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+    
+        <li class="form-stepper-active text-center form-stepper-list" step="1">
+            <a class="mx-2">
+                <span class="form-stepper-circle">
+                    <span>1</span>
+                </span>
+                <div class="label">Condition</div>
+            </a>
+        </li>
+        
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>2</span>
+                </span>
+                <div class="label text-muted">Which are bad?</div>
+            </a>
+        </li>
+
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>3</span>
+                </span>
+                <div class="label text-muted">Brand, model, etc</div>
+            </a>
+        </li>
+
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>4</span>
+                </span>
+                <div class="label text-muted">Mounting</div>
+            </a>
+        </li>
+        
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>5</span>
+                </span>
+                <div class="label text-muted">Spare</div>
+            </a>
+        </li>
+    </ul>
+
+
+    <div id="userAccountSetupForm" name="userAccountSetupForm">
+
+        <section id="step-1" class="form-step">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Condition</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <div>
+                    <p>Are all tires in good conditions?</p>
+                    <div style="display: flex; flex-direction: row">
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">Yes</div>
+                        </div>
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">No</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="step-2" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Which tires need to be replaced?</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3" style="display: flex; flex-wrap: wrap;">
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Front Left</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Front Right</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Rear left</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Rear Right</div>
+                </div> 
+            </div>
+            
+        </section>
+
+        <section id="step-3" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Brand, Model, etc</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <div>
+                    <p>Are all tires of same brand, model, size, tread design, speed and load rating?</p>
+                    <div style="display: flex; flex-direction: row">
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">Yes</div>
+                        </div>
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">No</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            
+        </section>
+
+        <section id="step-4" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Mounting</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="3">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="5">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <div>
+                    <p>All tires are mounted properly (no contact with the vehicle body or any other rigid component)</p>
+                    <div style="display: flex; flex-direction: row">
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">Yes</div>
+                        </div>
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">No</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            
+        </section>
+   
+        <section id="step-5" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Spare</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="4">Prev</button>
+                    <button class="button" onclick="location.href='/warning-lights'">Dashboard Warning Lights</button>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <div>
+                    <p>Spare tire is present and in good condition</p>
+                    <div style="display: flex; flex-direction: row">
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">Yes</div>
+                        </div>
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">No</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+            
+        </section>
+    </div>
+</div>
+
+<script>
+
+const navigateToFormStep = (stepNumber) => {
+
+    document.querySelectorAll(".form-step").forEach((formStepElement) => {
+        formStepElement.classList.add("d-none");
+    });
+
+    document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+        formStepHeader.classList.add("form-stepper-unfinished");
+        formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+    });
+ 
+    document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+
+    const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+
+    formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+    formStepCircle.classList.add("form-stepper-active");
+
+    for (let index = 0; index < stepNumber; index++) {
+        const formStepCircle = document.querySelector('li[step="' + index + '"]');
+ 
+        if (formStepCircle) {
+            formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+            formStepCircle.classList.add("form-stepper-completed");
+        }
+    }
+};
+
+document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+    formNavigationBtn.addEventListener("click", () => {
+        const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+
+        navigateToFormStep(stepNumber);
+    });
+});
+
+</script>

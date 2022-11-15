@@ -1,0 +1,226 @@
+<head>
+    <link rel="stylesheet" href="/styles/checkbox.css">
+</head>
+
+<div id="multi-step-form-container">
+    <!-- Progress Bar -->
+    <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+    
+        <li class="form-stepper-active text-center form-stepper-list" step="1">
+            <a class="mx-2">
+                <span class="form-stepper-circle">
+                    <span>1</span>
+                </span>
+                <div class="label">Lights on Dashbooard</div>
+            </a>
+        </li>
+        
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>2</span>
+                </span>
+                <div class="label text-muted">Removed Lights</div>
+            </a>
+        </li>
+        
+    </ul>
+
+
+    <div id="userAccountSetupForm" name="userAccountSetupForm">
+
+        <section id="step-1" class="form-step">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Which lights are on the dashboard?</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3" style="display: flex; flex-wrap: wrap;">
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">None</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">ABS</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Airbag</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Battery</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Brake System</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Check Engine</div>
+                </div>
+                
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Oil Change</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Gas Cap</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Traction</div>
+                </div>
+
+                <div class="selectVH">
+                    <label class="checkbox bounce">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 21 21">
+                            <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                        </svg>
+                    </label>
+                    <div style="margin-left: 5px;">Other</div>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+   
+        <section id="step-2" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Removed lights</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                    <button class="button" onclick="location.href='/door-locks'">Doors & locks</button>
+                </div>
+            </div>
+
+            
+            <div class="mt-3">
+                <div>
+                    <p>One or many dashboard warning lights have been removed</p>
+                    <div style="display: flex; flex-direction: row">
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">Yes</div>
+                        </div>
+                        <div class="selectVH">
+                            <label class="checkbox bounce">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                </svg>
+                            </label>
+                            <div style="margin-left: 5px;">No</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</div>
+
+<script>
+
+const navigateToFormStep = (stepNumber) => {
+
+    document.querySelectorAll(".form-step").forEach((formStepElement) => {
+        formStepElement.classList.add("d-none");
+    });
+
+    document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+        formStepHeader.classList.add("form-stepper-unfinished");
+        formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+    });
+ 
+    document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+
+    const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+
+    formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+    formStepCircle.classList.add("form-stepper-active");
+
+    for (let index = 0; index < stepNumber; index++) {
+        const formStepCircle = document.querySelector('li[step="' + index + '"]');
+ 
+        if (formStepCircle) {
+            formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+            formStepCircle.classList.add("form-stepper-completed");
+        }
+    }
+};
+
+document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+    formNavigationBtn.addEventListener("click", () => {
+        const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+
+        navigateToFormStep(stepNumber);
+    });
+});
+
+</script>

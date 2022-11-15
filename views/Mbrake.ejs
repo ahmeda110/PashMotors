@@ -1,0 +1,382 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/styles/checkbox.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<div id="multi-step-form-container">
+    <!-- Progress Bar -->
+    <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+    
+        <li class="form-stepper-active text-center form-stepper-list" step="1">
+            <a class="mx-2">
+                <span class="form-stepper-circle">
+                    <span>1</span>
+                </span>
+                <div class="label">Pedal</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>2</span>
+                </span>
+                <div class="label text-muted">Parking Status</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>3</span>
+                </span>
+                <div class="label text-muted">Parking Release</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>4</span>
+                </span>
+                <div class="label text-muted">Linings</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>5</span>
+                </span>
+                <div class="label text-muted">Calipers</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="6">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>6</span>
+                </span>
+                <div class="label text-muted">Pads</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="7">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>7</span>
+                </span>
+                <div class="label text-muted">lights</div>
+            </a>
+        </li>
+        <li class="form-stepper-unfinished text-center form-stepper-list" step="8">
+            <a class="mx-2">
+                <span class="form-stepper-circle text-muted">
+                    <span>8</span>
+                </span>
+                <div class="label text-muted">Master Cylinder</div>
+            </a>
+        </li>
+        
+    </ul>
+
+
+    <div id="userAccountSetupForm" name="userAccountSetupForm">
+
+        <section id="step-1" class="form-step">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Pedal</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+                </div>
+            </div>
+            
+            <div class="mt-3">  
+                <p>Inspect the pedal</p>
+                <div style="display: flex; flex-direction: column; " class="selectVH">
+    
+                    <div class="dropdown">
+                        <div class="select">
+                            
+                            <span style="margin-left: 5px;">Select</span>
+                            <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-menu">
+                            <li id="male">No Issues</li>
+                            <li id="female">Minor Issues</li>
+                            <li id="female">Major Issues</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+        </section>
+        <section id="step-2" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Parking Status</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+                </div>
+            </div>
+            
+            <div class="mt-3">  
+                <p>The parking brake and service brake are in good working order</p>
+                <div style="display: flex; flex-direction: column; " class="selectVH">
+    
+                    <div class="dropdown">
+                        <div class="select">
+                            
+                            <span style="margin-left: 5px;">Select</span>
+                            <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-menu">
+                            <li id="male">No Issues</li>
+                            <li id="female">Minor Issues</li>
+                            <li id="female">Major Issues</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            
+
+        </section>
+        <section id="step-3" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Parking Release</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">  
+            <p>Parking brake releases completely</p>
+            <div style="display: flex; flex-direction: column; " class="selectVH">
+
+                <div class="dropdown">
+                    <div class="select">
+                        
+                        <span style="margin-left: 5px;">Select</span>
+                        <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">No Issues</li>
+                        <li id="female">Minor Issues</li>
+                        <li id="female">Major Issues</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="step-4" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Bake Linings</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="3">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="5">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">  
+            <p>Brake linings OK?</p>
+            <div style="display: flex; flex-direction: column; " class="selectVH">
+
+                <div class="dropdown">
+                    <div class="select">
+                        
+                        <span style="margin-left: 5px;">Select</span>
+                        <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">No Issues</li>
+                        <li id="female">Minor Issues</li>
+                        <li id="female">Major Issues</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="step-5" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Calipers</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="4">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="6">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">  
+            <p>Inspect brakes, calipers, lines and hoses</p>
+            <div style="display: flex; flex-direction: column; " class="selectVH">
+
+                <div class="dropdown">
+                    <div class="select">
+                        
+                        <span style="margin-left: 5px;">Select</span>
+                        <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">No Issues</li>
+                        <li id="female">Minor Issues</li>
+                        <li id="female">Major Issues</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="step-6" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Pads</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="5">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="7">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">  
+            <p>Brake pads/shoes must have minimum of 50% wear remaining</p>
+            <div style="display: flex; flex-direction: column; " class="selectVH">
+
+                <div class="dropdown">
+                    <div class="select">
+                        
+                        <span style="margin-left: 5px;">Select</span>
+                        <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">No Issues</li>
+                        <li id="female">Minor Issues</li>
+                        <li id="female">Major Issues</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        
+        <section id="step-7" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Lights</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="6">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="8">Next</button>
+                </div>
+            </div>
+
+            <div class="mt-3">  
+            <p>The warning light come on when the parking brake is applied or turn off when released</p>
+            <div style="display: flex; flex-direction: column; " class="selectVH">
+
+                <div class="dropdown">
+                    <div class="select">
+                        
+                        <span style="margin-left: 5px;">Select</span>
+                        <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">No Issues</li>
+                        <li id="female">Minor Issues</li>
+                        <li id="female">Major Issues</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="step-8" class="form-step d-none">
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h2 class="font-normal">Master Cylinder</h2>
+                <div style="margin-top: -30px;">
+                    <button class="button btn-navigate-form-step" type="button" step_number="7">Prev</button>
+                    <button class="button" onclick="location.href='/fuel-exhaust'" >Fuel & Exhaust System</button>
+                </div>
+            </div>
+
+            <div class="mt-3">  
+                <p>Visually inspect the master cylinder and its fasteners and fittings.</p>
+                <div style="display: flex; flex-direction: column; " class="selectVH">
+    
+                    <div class="dropdown">
+                        <div class="select">
+                            
+                            <span style="margin-left: 5px;">Select</span>
+                            <i style="position: relative; top: -2px;" class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-menu">
+                            <li id="male">No Issues</li>
+                            <li id="female">Minor Issues</li>
+                            <li id="female">Major Issues</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        </section>
+        
+    </div>
+</div>
+
+<script >
+$('.dropdown').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu').slideToggle(300);
+    });
+    $('.dropdown').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu').slideUp(300);
+    });
+    $('.dropdown .dropdown-menu li').click(function () {
+        $(this).parents('.dropdown').find('span').text($(this).text());
+        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+    });
+
+
+const navigateToFormStep = (stepNumber) => {
+
+    document.querySelectorAll(".form-step").forEach((formStepElement) => {
+        formStepElement.classList.add("d-none");
+    });
+
+    document.querySelectorAll(".form-stepper-list").forEach((formStepHeader) => {
+        formStepHeader.classList.add("form-stepper-unfinished");
+        formStepHeader.classList.remove("form-stepper-active", "form-stepper-completed");
+    });
+ 
+    document.querySelector("#step-" + stepNumber).classList.remove("d-none");
+
+    const formStepCircle = document.querySelector('li[step="' + stepNumber + '"]');
+
+    formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-completed");
+    formStepCircle.classList.add("form-stepper-active");
+
+    for (let index = 0; index < stepNumber; index++) {
+        const formStepCircle = document.querySelector('li[step="' + index + '"]');
+ 
+        if (formStepCircle) {
+            formStepCircle.classList.remove("form-stepper-unfinished", "form-stepper-active");
+            formStepCircle.classList.add("form-stepper-completed");
+        }
+    }
+};
+
+document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
+    formNavigationBtn.addEventListener("click", () => {
+        const stepNumber = parseInt(formNavigationBtn.getAttribute("step_number"));
+
+        navigateToFormStep(stepNumber);
+    });
+});
+
+</script>
